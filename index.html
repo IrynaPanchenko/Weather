@@ -16,6 +16,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
         <form id="search-form">
           <div class="row">
@@ -44,28 +45,36 @@
         <h1></h1>
         <ul>
           <li>
-            <span id="day"></span> <span id="hour">20</span>:<span
+            <span id="day"></span> <span id="hour"></span>:<span
               id="minute"
-              >20</span
+              ></span
             >
           </li>
           <li id="description"></li>
         </ul>
         <div class="row">
-          <div class="col-6">
-            <span><img src="Images/sunny.png" width="60px" /></span
-            ><span class="temperature" id="temperature"
-              ></span><span class="units">° C</span
-            >
+          <div class="col-6">     
+                 
+             <img src="Images/sunny.png" width="40px"/>
+             
+              <span class="temperature" id="temperature"></span>
+             <span class="temperature-converter"><span class="celsius" aria-disabled="true" role="button" id="celsius-link">°C</span>
+              <span class="line">|</span>
+              <span class="fahrenheit"  aria-disabled="true" role="button" id="fahrenheit-link">°F</span></span>
           </div>
+            
+          
 
-          <div class="col-6">
+            <div class="col-6">
             <div class="wind">Humidity: <span id="humidity"></span>%<br />Wind: <span id="windspeed"> </span> km/h</div>
-          </div>
+            </div>
         </div>
       </div>
+      
+    
+   <small><a href="https://github.com/IrynaPanchenko/Weather.git"target="_blank">Open source code</a> by Iryna Panchenko</small>
     </div>
-    <a href="https://github.com/IrynaPanchenko/Weather.git"target="_blank">Open source code</a> by Iryna Panchenko
-    <script src="WeatherApp.js"></script>
+    </div>
+   <script src="WeatherApp.js"></script>
   </body>
 </html>
